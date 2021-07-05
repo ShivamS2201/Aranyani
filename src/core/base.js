@@ -15,7 +15,7 @@ const Base = ({
           <div className="row">
             <div className="col-3 border">ARANYANI</div>
             <div className="col-4"></div>
-            <div className="col-5 border">
+            <div className="col-5 ">
                 <div className="row row-cols-2 row-cols-lg-3">
                     <div className="col-2">Services</div>
                     <div className="col-2">Clients</div>
@@ -47,9 +47,9 @@ const Container = styled.div`
       transition-timing-function: cubic-bezier(1, 0.03, 0, 1.26);
 
     .jumbotron {
+      background-image: linear-gradient(to right, #eaeaea,#e6d7d7 );
         position:relative;
-      background-color: red;
-      min-height: 70px;
+        min-height: 70px;
     }
     .row{
         font-family:'Cantarell';
@@ -59,15 +59,16 @@ const Container = styled.div`
         .col-3{
             text-align:center;
             font-size:45px;
+            cursor:pointer;
         }
         .col-5{
             .row{
                 min-height: 2.3em;
                 justify-content: space-around;
-                background-color:green;
                 .col-2{
                  background-color:white;
                  border-radius:20px;
+                 width: 6rem;
                 }
                 .col-2:hover{
                     transform:scale(1.11);
