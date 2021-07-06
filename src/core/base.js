@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Base = ({
   title = "Titles",
   description = "Desc",
-  classname = "bg-white text-black p-4 h-100",
+  classname = "bg-white text-black h-100",
   children,
 }) => {
   return (
@@ -13,7 +13,7 @@ const Base = ({
       <div className="Container">
         <div className="jumbotron text-black text-center">
           <div className="row">
-            <div className="col-3 border">ARANYANI</div>
+            <div className="col-3 ">ARANYANI</div>
             <div className="col-4"></div>
             <div className="col-5 ">
                 <div className="row row-cols-2 row-cols-lg-3">
@@ -26,7 +26,7 @@ const Base = ({
         <div className={classname}>{children}</div>
       </div>
 
-      <footer className="footer bg-dark mt-auto py-2">
+      <footer className="footer bg-dark">
         <div className="container-fluid bg-blue text-white text-center py-3 ">
           <h4 classsName="d-inline pr-3">Get in touch with us</h4>
           <button className="btn btn-warning btn-sm  d-inline">
