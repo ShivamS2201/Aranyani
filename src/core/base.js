@@ -16,10 +16,10 @@ const Base = ({
             <div className="col-3 ">ARANYANI</div>
             <div className="col-4"></div>
             <div className="col-5 ">
-                <div className="row row-cols-2 row-cols-lg-3">
-                    <div className="col-2">Services</div>
-                    <div className="col-2">Clients</div>
-                </div>
+              <div className="row row-cols-2 row-cols-lg-3">
+                <div className="col-2">Services</div>
+                <div className="col-2">Clients</div>
+              </div>
             </div>
           </div>
         </div>
@@ -43,50 +43,51 @@ const Base = ({
 
 const Container = styled.div`
   .Container {
-      transition:all 250ms;
-      transition-timing-function: cubic-bezier(1, 0.03, 0, 1.26);
+    transition: all 250ms;
+    transition-timing-function: cubic-bezier(1, 0.03, 0, 1.26);
 
     .jumbotron {
-      background-image: linear-gradient(to right, #eaeaea,#e6d7d7 );
-        position:relative;
-        min-height: 70px;
+      z-index: 1;
+      background-image: linear-gradient(to right, #eaeaea, #e6d7d7);
+      position: relative;
+      min-height: 70px;
     }
-    .row{
-        font-family:'Cantarell';
-        align-items: center;
-        position:relative;
-        --bs-gutter-x: 0;
-        .col-3{
-            text-align:center;
-            font-size:45px;
-            cursor:pointer;
+    .row {
+      font-family: "Cantarell";
+      align-items: center;
+      position: relative;
+      --bs-gutter-x: 0;
+      .col-3 {
+        text-align: center;
+        font-size: 45px;
+        cursor: pointer;
+      }
+      .col-5 {
+        .row {
+          min-height: 2.3em;
+          justify-content: space-around;
+          .col-2 {
+            background-color: white;
+            border-radius: 20px;
+            width: 6rem;
+          }
+          .col-2:hover {
+            transform: scale(1.11);
+            cursor: pointer;
+          }
         }
-        .col-5{
-            .row{
-                min-height: 2.3em;
-                justify-content: space-around;
-                .col-2{
-                 background-color:white;
-                 border-radius:20px;
-                 width: 6rem;
-                }
-                .col-2:hover{
-                    transform:scale(1.11);
-                    cursor:pointer;
-                }
-            }
-        }
+      }
     }
-    @media only screen and (max-width: 768px){
-        .row{
-        top:12px;
-        font-family: 'Cantarell';
+    @media only screen and (max-width: 768px) {
+      .row {
+        top: 12px;
+        font-family: "Cantarell";
 
-            .col-3{
-                top:0.4em;
-            font-size:18.5px;
+        .col-3 {
+          top: 0.4em;
+          font-size: 18.5px;
         }
-    }
+      }
     }
   }
 `;
